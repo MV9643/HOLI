@@ -1,0 +1,174 @@
+<html>
+	<head><title>HAPPY HOLI</title>
+	<style>
+*
+{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:arial;
+}
+body
+{
+	background:#361040 url(bg.png);
+	background-attachment:fixed;
+	background-position:center;
+}
+#header
+{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	padding:30px 100px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	z-index:10000;
+}
+#header .logo
+{
+	color:#fff;
+	font-weight:700;
+	text-decoration:none;
+	font-size:2em;
+}
+#header ul
+{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	gap:40px;
+}
+#header ul li
+{
+		list-style:none;
+}
+#header ul li a
+{
+	text-decoration:none;
+	padding:6px 15px;
+	color:#fff;
+	border-radius:20px;
+}
+#header ul li a:hover
+{
+	background:#fff;
+	color:#361040;
+	
+}
+#header ul li a:hover,
+#header ul li a .active
+{
+	background:#fff;
+	color:#361040;
+}
+.sec
+{
+	position:relative;
+	color:##361040;
+}
+.sec h2
+{
+	font-size:3.5em;
+	color:#fff;
+}
+.sec p
+{
+	color:#fff;
+	overflow:hidden;
+}
+#sec0
+{
+	position:relative;
+	width:100%;
+	height:100vh;
+}
+#sec0 img
+{
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	object-fit:cover;
+	pointer-events:none;
+}
+.holi
+{
+	font-size:100px;
+	align-items:center;
+	justify-content:center;
+	text-align:center;
+	color:#ebf;
+}
+.holi1
+{
+	font-size:100px;
+	align-items:center;
+	justify-content:center;
+	text-align:center;
+	color:#ebf;
+}
+	</style>
+	</head>
+	<body>
+		<header id="header">
+			<a href="#" class="logo">Festival</a>
+			<ul>
+				<li><a href="#" class="active">HOME</a></li>
+				<li><a href="#">ABOUT</a></li>
+				<li><a href="#">EVENTS</a></li>
+				<li><a href="#">CONTACT</a></li>
+			</ul>
+		</header>
+		<section id="sec0">
+			<img src="splash.png" id="splash"><img>
+			<img src="text.png" id="text"><img>
+			<img src="baloon1.png" id="baloon1"><img>
+			<img src="baloon2.png" id="baloon2"><img>
+			<img src="baloon3.png" id="baloon3"><img>
+			<img src="Decoration1.png" id="Decoration1"><img>
+			<img src="Decoration2.png" id="Decoration2"><img>
+			<img src="color1.png" id="color1"><img>
+			<img src="color2.png" id="color2"><img>
+			<img src="watergun1.png" id="watergun1"><img>
+			<img src="watergun2.png" id="watergun2"><img>
+		</section>
+		<div class="sec">
+			<h2>Parallax Scrolling Effects</h2>
+			<p>Holi’s traditions vary throughout the country and have their roots in Indian mythology. In many places the festival is associated with the legend of Hiranyakashipu, a demon king in ancient India.<br> Hiranyakashipu enlisted the help of his sister, Holika, to kill his son, Prahlada, a devoted worshipper of Vishnu. In an attempt to burn Prahlada, Holika sat with him on a pyre while wearing a cloak that protected her from the fire.<br> But the cloak protected Prahlada instead, and Holika burned. Later that night Vishnu succeeded in killing Hiranyakashipu, and the episode was heralded as a triumph of good over evil. In many places in India, a large pyre is lit on the night before Holi to celebrate this occasion.<br>
+			In other places, the story of Krishna and Radha is central. The story goes that Krishna, a Hindu deity who is considered a manifestation of Vishnu, fell in love with the milkmaid Radha, but he was embarrassed that his skin was dark blue and hers fair.<br> In order to rectify this, he playfully colored her face during a game with her and the other milkmaids. This is thought to be an origin of the colored water and powder throwing. The general merrymaking is also seen as characteristic of Krishna, who is known for his pranks and play.<br>
+			</p><h3 class="holi">HAPPY HOLI 2024</h3>
+			<h2 class="holi1">VIKASH SHARMA<h2>
+		</div>
+	</body>
+	<script>
+		let splash = document.getElementById('splash');
+		let text = document.getElementById('text');
+		let baloon1 = document.getElementById('baloon1');
+		let baloon2 = document.getElementById('baloon2');
+		let baloon3 = document.getElementById('baloon3');
+		let Decoration1 = document.getElementById('Decoration1');
+		let Decoration2 = document.getElementById('Decoration2');
+		let color1 = document.getElementById('color1');
+		let color2 = document.getElementById('color2');
+		let watergun1 = document.getElementById('watergun1');
+		let watergun2 = document.getElementById('watergun2');
+		
+		window.addEventListener('scroll',function()
+		{
+			let value = window.scrollY;
+			splash.style.top = value * 0.75+'px';
+			text.style.top = value * 0.25+'px';
+			Decoration1.style.top = value * 0.25+'px';
+			baloon1.style.top = value * -3.25+'px';
+			baloon2.style.top = value * -0.5+'px';
+			baloon3.style.top = value * -2+'px';
+			color1.style.top = value * -0.25+'px';
+			color2.style.top = value * -0.75+'px';
+			watergun1.style.left = value * -0.75+'px';
+			watergun2.style.left = value * 0.75+'px';
+		})
+	</script>
+</html>
